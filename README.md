@@ -20,6 +20,14 @@ This project analyzes electric vehicle market data and presents actionable insig
 - HTML5 / CSS3
 - Git & GitHub
 
+## Story link -- 
+
+https://public.tableau.com/views/EVMarketPerformanceInsights_17931220765460/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+## Dashboard link --
+
+https://public.tableau.com/views/EVMarketPerformanceInsights_17931220765460/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 ## 🚀 Run Locally
 
 1. Clone this repository:

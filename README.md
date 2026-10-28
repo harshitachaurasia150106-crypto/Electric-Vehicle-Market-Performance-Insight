@@ -41,4 +41,4 @@ python app.py
 
 Live demo--https://evmarketperformanceandinsight.netlify.app/
 
-
+Author---Harshita Chaurasia

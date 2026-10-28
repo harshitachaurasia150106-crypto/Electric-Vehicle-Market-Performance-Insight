@@ -26,12 +26,15 @@ This project analyzes electric vehicle market data and presents actionable insig
    git clone [https://github.com/harshitachaurasia150106-crypto/Electric-Vehicle-Market-Performance-Insight.git]
 
 2.Navigate to the project directory:
+
 cd Electric-Vehicle-Market-Performance-Insight
 
 3.Install dependencies:
+
 pip install -r requirements.txt
 
 4.Run the flask application:
+
 python app.py
 
 5.Open http://127.0.0.1:5000 in your browser.

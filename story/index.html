@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electric Vehicle Market Performance &amp; Insights</title>
+  <meta name="description" content="Interactive Tableau dashboard and story on electric vehicle market performance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand"><span class="brand-dot">⚡</span> EV Insights</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#services">Services</a>
+        <a href="#viz" data-tab-link="dashboard">Dashboard</a>
+        <a href="#viz" data-tab-link="story">Story</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <span class="badge">Tableau Public · Data Storytelling</span>
+        <h1>Electric Vehicle <span class="gradient">Market Performance</span> &amp; Insights</h1>
+        <p class="lead">Explore how the EV market is evolving through an interactive dashboard and a guided data story.</p>
+        <div class="hero-actions">
+          <a href="#viz" class="btn btn-primary" data-tab-link="dashboard">Open Dashboard</a>
+          <a href="#viz" class="btn btn-ghost" data-tab-link="story">Read the Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About the Project</h2>
+        <p class="section-sub">Turning raw EV market data into clear, decision-ready insight.</p>
+        <div class="card about-card">
+          <p>This project analyses electric vehicle market performance and presents the findings through
+          Tableau Public visualisations embedded in a Flask web application. Use the dashboard to explore
+          the data yourself, or follow the story for a curated walkthrough of the main takeaways.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <p class="section-sub">Built for exploration and clarity.</p>
+        <div class="grid grid-3">
+          <article class="card"><div class="icon">📊</div><h3>Interactive Dashboard</h3><p>Filter, highlight and drill down to compare segments instantly.</p></article>
+          <article class="card"><div class="icon">📖</div><h3>Guided Story</h3><p>A sequence of story points that explains the “why” behind the numbers.</p></article>
+          <article class="card"><div class="icon">📱</div><h3>Fully Responsive</h3><p>Layouts and embeds scale smoothly from phones to widescreen monitors.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-sub">What this analysis helps you do.</p>
+        <div class="grid grid-3">
+          <article class="card"><div class="icon">🔍</div><h3>Market Analysis</h3><p>Understand performance trends across the electric vehicle market.</p></article>
+          <article class="card"><div class="icon">📈</div><h3>Trend Insights</h3><p>Spot growth patterns, leaders and emerging opportunities.</p></article>
+          <article class="card"><div class="icon">🧭</div><h3>Decision Support</h3><p>Back strategy and investment discussions with visual evidence.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISUALISATIONS -->
+    <section id="viz" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Explore the Data</h2>
+        <p class="section-sub">Switch between the interactive dashboard and the narrative story.</p>
+
+        <div class="tabs" role="tablist">
+          
+          <button class="tab " role="tab"
+                  data-tab="dashboard" aria-selected="false">
+            Interactive Dashboard
+          </button>
+          
+          <button class="tab active" role="tab"
+                  data-tab="story" aria-selected="true">
+            Data Story
+          </button>
+          
+        </div>
+
+        
+        <div class="panel card " id="panel-dashboard" role="tabpanel">
+          <div class="panel-head">
+            <div>
+              <h3>Interactive Dashboard</h3>
+              <p>Filter, hover and drill into EV market performance metrics.</p>
+            </div>
+            <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener"
+               href="https://public.tableau.com/views/EVMarketPerformanceInsights_17931220765460/Dashboard1">Open on Tableau ↗</a>
+          </div>
+          <div class="tableau-wrap" style="--viz-height: 850px;">
+            <div class="loader">Loading visualisation…</div>
+            <iframe title="Interactive Dashboard" data-src="https://public.tableau.com/views/EVMarketPerformanceInsights_17931220765460/Dashboard1?:language=en-US&amp;:display_count=n&amp;:showVizHome=no&amp;:embed=y&amp;:toolbar=yes&amp;:showShareOptions=false"
+                    
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        <div class="panel card active" id="panel-story" role="tabpanel">
+          <div class="panel-head">
+            <div>
+              <h3>Data Story</h3>
+              <p>A guided, step-by-step narrative of the key EV market insights.</p>
+            </div>
+            <a class="btn btn-ghost btn-sm" target="_blank" rel="noopener"
+               href="https://public.tableau.com/views/EVMarketPerformanceInsights_17931220765460/Story1">Open on Tableau ↗</a>
+          </div>
+          <div class="tableau-wrap" style="--viz-height: 900px;">
+            <div class="loader">Loading visualisation…</div>
+            <iframe title="Data Story" data-src="https://public.tableau.com/views/EVMarketPerformanceInsights_17931220765460/Story1?:language=en-US&amp;:display_count=n&amp;:showVizHome=no&amp;:embed=y&amp;:toolbar=yes&amp;:showShareOptions=false"
+                    src="https://public.tableau.com/views/EVMarketPerformanceInsights_17931220765460/Story1?:language=en-US&amp;:display_count=n&amp;:showVizHome=no&amp;:embed=y&amp;:toolbar=yes&amp;:showShareOptions=false"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Electric Vehicle Market Performance &amp; Insights · Built with Flask &amp; Tableau Public</p>
+    </div>
+  </footer>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
